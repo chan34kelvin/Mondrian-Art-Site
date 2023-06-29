@@ -1,0 +1,46 @@
+
+@media (max-width: 750px) {
+  :root {
+    --black-img: transparent;
+    --yellow-img: transparent;
+    --red-img: transparent;
+    --blue-img: transparent;
+    --white-img: transparent;
+    --small-gap: 2.5px;
+    --big-gap: 2.5px;
+    --black: #1a1110;
+    --yellow: #ffe135;
+    --red: #a52a2a;
+    --blue: #191970;
+    --white: white;
+  }
+}
+
+@media (min-width: 750px) {
+  :root {
+    --black-img: transparent;
+    --yellow-img: transparent;
+    --red-img: transparent;
+    --blue-img: transparent;
+    --white-img: transparent;
+    --small-gap: 2.5px;
+    --big-gap: 2.5px;
+    --black: #1a1110;
+    --yellow: #ffe135;
+    --red: #a52a2a;
+    --blue: #191970;
+    --white: #fdf5e6;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --big-gap: 5px;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --big-gap: 0.4vw;
+  }
+}
