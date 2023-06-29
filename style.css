@@ -1,0 +1,284 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+@media (max-width: 750px) {
+  :root {
+    --radius: 0%;
+    --icon-pad: 10px;
+    --icon-size: 35px;
+    --icon-shad: none;
+    --icon-shad-hover: none;
+  }
+}
+
+@media (min-width: 750px) {
+  :root {
+    --radius: 0%;
+    --icon-pad: 2.5px;
+    --icon-size: 30px;
+    --icon-shad: none;
+    --icon-shad-hover: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --radius: 0%;
+    --icon-pad: 5px;
+    --icon-size: 40px;
+    --icon-shad: none;
+    --icon-shad-hover: none;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --radius: 0%;
+    --icon-pad: 0.4vw;
+    --icon-size: 2vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .phone-ver {
+    padding: 0.5vw;
+    height: 100vh;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vw;
+    border: var(--big-gap) solid black;
+    border-top: 0;
+    height: 11vh;
+  }
+
+  .refresh {
+    cursor: pointer;
+    border-bottom: 5px solid black;
+    transition-duration: 0.5s;
+    border-radius: var(--radius);
+    box-shadow: var(--icon-shad);
+    color: black;
+  }
+
+  .refresh:hover {
+    border: none;
+    transform: scale(1);
+    border-radius: var(--radius);
+    /*   transform: scale(1.01); */
+    box-shadow: var(--icon-shad-hover);
+  }
+
+  .refresh-icon {
+    font-size: var(--icon-size);
+    padding: var(--icon-pad);
+  }
+
+  /* parent then child for child to change after parent is hovered */
+  .refresh:hover .refresh-icon {
+    color: grey;
+    border-radius: var(--radius);
+  }
+
+  .image-mode {
+    text-decoration: none;
+    border: 5px solid black;
+    transition-duration: 0.5s;
+    color: black;
+    border-radius: var(--radius);
+    box-shadow: var(--icon-shad);
+  }
+
+  .image-icon {
+    font-size: var(--icon-size);
+    padding: var(--icon-pad);
+  }
+
+  .image-mode:hover {
+    background-color: transparent;
+    color: grey;
+    border: 5px solid transparent;
+    /*       transform: scale(1.01); */
+  }
+
+  .image-mode:hover .image-icon {
+    border-radius: var(--radius);
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4vw;
+    border: var(--big-gap) solid black;
+    border-top: 0;
+    min-height: 7vh;
+    text-decoration: none;
+  }
+
+  .title-text {
+    font-family: "Berkshire Swash", cursive;
+    margin: 0;
+    font-size: var(--icon-size);
+    letter-spacing: 1.5vw;
+    color: black;
+  }
+
+  .site-grid {
+    display: none;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(10, 2fr);
+    grid-gap: var(--big-gap);
+    background-color: black;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 750px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .phone-ver {
+    display: none;
+  }
+
+  .refresh {
+    cursor: pointer;
+    border-bottom: 2.5px solid black;
+    transition-duration: 0.5s;
+    border-radius: var(--radius);
+    box-shadow: var(--icon-shad);
+    color: black;
+  }
+
+  .refresh:hover {
+    border: none;
+    transform: scale(1);
+    border-radius: var(--radius);
+    /*   transform: scale(1.01); */
+    box-shadow: var(--icon-shad-hover);
+  }
+
+  .refresh-icon {
+    font-size: var(--icon-size);
+    padding: var(--icon-pad);
+  }
+
+  /* parent then child for child to change after parent is hovered */
+  .refresh:hover .refresh-icon {
+    /*     background-color: black; */
+    color: grey;
+    border-radius: var(--radius);
+  }
+
+  .image-mode {
+    text-decoration: none;
+    border: 2.5px solid black;
+    transition-duration: 0.5s;
+    color: black;
+    border-radius: var(--radius);
+    box-shadow: var(--icon-shad);
+  }
+
+  .image-icon {
+    font-size: var(--icon-size);
+    padding: var(--icon-pad);
+  }
+
+  .image-mode:hover {
+    color: grey;
+    transform: scale(1);
+    box-shadow: var(--icon-shad-hover);
+    background-color: transparent;
+    border: 2.5px solid transparent;
+  }
+
+  .image-mode:hover .image-icon {
+    border-radius: var(--radius);
+  }
+
+  .title {
+    border: none;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-text {
+    font-family: "Berkshire Swash", cursive;
+    margin: 0;
+    font-size: var(--icon-size);
+    letter-spacing: 1vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  .site-grid {
+    display: grid;
+    /*     grid-template-columns: 1.75fr 1.75fr 2.5fr 1.5fr; */
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(10, 2fr);
+    grid-gap: var(--big-gap);
+    background-color: black;
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .refresh {
+    border-bottom: 3.5px solid black;
+  }
+
+  .image-mode {
+    border: 3.5px solid black;
+  }
+
+  .image-mode:hover {
+    border: 3.5px solid transparent;
+  }
+
+  .title-text {
+    margin: 0;
+    font-size: var(--icon-size);
+    letter-spacing: 1vw;
+  }
+
+  .site-grid {
+    grid-gap: var(--big-gap);
+  }
+}
+
+@media (min-width: 1800px) {
+  .refresh {
+    border-bottom: 0.2vw solid black;
+  }
+
+  .image-mode {
+    border: 0.2vw solid black;
+  }
+
+  .image-mode:hover {
+    border: 0.2vw solid transparent;
+  }
+}
