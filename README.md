@@ -4,7 +4,7 @@ Visit here: https://mondrian-art-kelvin-ck-chan.glitch.me/
 
 This project is a creative display of Mondrian art, offering multiple variations and unique features. It allows users to rotate the central element within the Mondrian, resulting in different compositions. Additionally, users can switch patterns to create entirely new Mondrian art. The project also includes a picture mode, where colors are replaced with images of the same hue, presenting a different art style. It aims to provide an engaging and immersive experience for art enthusiasts, encouraging exploration and appreciation of Mondrian's aesthetics.
 
-This was a site requested by Code Tenderloin to built during the internship.
+This was a project site I built during my internship at Code Tenderloin.
 
 I built it in glitch and moved to github for better visibility of the code and description.
 
@@ -16,7 +16,9 @@ I built it in glitch and moved to github for better visibility of the code and d
 
 - The image mode changes all colors to images related to their respective colors.
 
-# Creative
+**This is designed to be mobile friendly and responsive**
+
+# More Creative Use
 
 Feel free to git clone this repo and change the images or colors on m-color and m-image.css to get creative.
 
@@ -42,7 +44,7 @@ Feel free to git clone this repo and change the images or colors on m-color and 
 
 ← `m-image.css`: mondrian image css file that contains var which link images to the background-image property during image-page.html when asked in m.css
 
-← `mondrian-layout.css`: mondrian layout css file that holds the layout of the grid to show the mondrian style art.
+← `mondrian-layout.css`: mondrian layout css file that holds the layout of the grid use to show the mondrian style art.
 
 ← `mondrian.js`: access sessionStorage, functions where you can rotate, change and any other modification to the original site from button click.
 
