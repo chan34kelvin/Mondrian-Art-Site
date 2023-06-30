@@ -8,9 +8,11 @@ I built it in glitch and moved to github for better visibility of the code and d
 
 # How To Use
 
-The middle square is designed to rotate when the button is clicked in the navbar.
-The left-right button can change mondrian patterns in the middle.
-The image mode changes all colors to images related to their respective colors.
+- The middle square is designed to rotate when the button is clicked in the navbar.
+
+- The left-right button can change mondrian patterns in the middle.
+
+- The image mode changes all colors to images related to their respective colors.
 
 # Creative
 
@@ -37,11 +39,3 @@ Feel free to git clone this repo and change the images or colors on m-color and 
 Built this with icons from Google Material Symbols and Icons 
 
 https://fonts.google.com/icons
-
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
