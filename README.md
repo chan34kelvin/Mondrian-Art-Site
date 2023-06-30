@@ -4,6 +4,8 @@ Visit here: https://mondrian-art-kelvin-ck-chan.glitch.me/
 
 This project is a creative display of Mondrian art, offering multiple variations and unique features. It allows users to rotate the central element within the Mondrian, resulting in different compositions. Additionally, users can switch patterns to create entirely new Mondrian art. The project also includes a picture mode, where colors are replaced with images of the same hue, presenting a different art style. It aims to provide an engaging and immersive experience for art enthusiasts, encouraging exploration and appreciation of Mondrian's aesthetics.
 
+This was a site requested by Code Tenderloin to built during the internship.
+
 I built it in glitch and moved to github for better visibility of the code and description.
 
 # How To Use
