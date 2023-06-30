@@ -2,6 +2,7 @@
   --t-secs: 0.5s;
 }
 
+/* site grid items = s-(1-9) */
 @media (max-width: 750px) {
   .s4 {
     display: grid;
