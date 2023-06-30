@@ -20,6 +20,16 @@ I built it in glitch and moved to github for better visibility of the code and d
 
 Feel free to git clone this repo and change the images or colors on m-color and m-image.css to get creative.
 
+# Development Environment
+
+- Glitch Editor
+
+# Programming Languages
+
+- CSS
+- HTML
+- JS
+
 # What's in this project?
 
 ← `README.md`: Details on what's on this site and what's it about.
