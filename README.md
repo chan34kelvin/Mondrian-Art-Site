@@ -22,6 +22,10 @@ I built it in glitch and moved to github for better visibility of the code and d
 
 Feel free to git clone this repo and change the images or colors on m-color and m-image.css to get creative.
 
+# Design Wireframe
+- Defines the structure and figure the correct content for the page in Figma before implementing.
+https://www.figma.com/file/fJ4Z8c39LObqUMQ3qrh8R6/Mondrian-Art-Site---Code-Tenderloin-Designs?type=design&node-id=0%3A1&mode=design&t=qAUU5xZBQCVgIwME-1
+
 # Development Environment
 
 - Glitch Editor

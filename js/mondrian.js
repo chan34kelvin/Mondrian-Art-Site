@@ -3,10 +3,9 @@ const name = "s4-";
 const limit = 3;
 
 let start = sessionStorage.getItem("start");
-console.log(start);
+
 InitLivery();
 if (start == null) {
-  console.log("inited");
   InitRotateArt();
   sessionStorage.setItem("start", true);
 }
@@ -32,7 +31,6 @@ function InitRotateArt() {
 
 function getLast() {
   let last = sessionStorage.getItem("last");
-  console.log(last, "test");
   if (last == null) {
     last = 1;
   } else {
@@ -50,7 +48,6 @@ function InitLivery() {
   let last = getLast();
   let newName = name + last;
 
-  console.log(newName, last);
   document.getElementById(newName).style.display = "grid";
   document.getElementById(newName + "-" + last).style.display = "grid";
   CurrRotation(newName, last);
@@ -85,7 +82,7 @@ function ChangeLivery() {
   // grids.sort(() => Math.random() - 0.3);
 
   let newName = name + last;
-  console.log(newName, last);
+
   document.getElementById(newName).style.display = "grid";
   document.getElementById(newName + "-" + last).style.display = "grid";
 
@@ -114,7 +111,6 @@ function RotateArt(ifInit) {
   let test = false;
 
   let rotateDeg = sessionStorage.getItem(itemName + newName);
-  console.log(rotateDeg, "deg");
 
   if (rotateDeg === "rotate(0deg)") {
     document.getElementById(newName).style.transform = "rotate(180deg)";
